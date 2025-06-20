@@ -1,0 +1,328 @@
+/* Style for the hero section */
+.hero-section {
+  /* Dark blue gradient background for Intel style */
+  background: linear-gradient(to bottom, #256fc4, #003366);
+  /* Add some padding for spacing */
+  padding: 5px 0;
+  /* Center all content horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Center text inside the section */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Center all text tags inside the hero section */
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p {
+  text-align: center;
+}
+
+.hero-section img {
+  /* Ensure the image is responsive */
+  margin-top: 40px;
+  width: 125px;
+  height: auto;
+  /* Add some margin for spacing */
+  margin-bottom: 10px;
+}
+
+.hero-section h1 {
+  font-size: 2.4em;
+  color: #e8ebf7;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  color: #e8ebf7;
+  max-width: 700px;
+  padding-bottom: 10px;
+}
+
+.card-sec-wrapper {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.card-section {
+  height: 325px;
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  /* Hide vertical scrollbar */
+  overflow-y: hidden;
+  /* Enable horizontal scroll snap */
+  scroll-snap-type: x mandatory;
+  /* Optional: smooth scrolling */
+  scroll-behavior: smooth;
+  /* Prevent vertical scrolling with mouse wheel */
+  overscroll-behavior-x: contain;
+  /* Custom scrollbar styles for a thinner, rounded look */
+}
+
+/* Style the horizontal scrollbar for .card-section */
+.card-section::-webkit-scrollbar {
+  height: 8px; /* Make scrollbar thinner */
+  background: #b7c0ca; /* Light background for scrollbar track */
+  border-radius: 8px;   /* Rounded corners for track */
+}
+
+.card-section::-webkit-scrollbar-thumb {
+  background: #1565c0;  /* Intel blue for the scrollbar thumb */
+  border-radius: 8px;   /* Rounded corners for thumb */
+}
+
+/* For Firefox */
+.card-section {
+  scrollbar-width: thin;           /* Make scrollbar thinner */
+  scrollbar-color: #1565c0 #e0e7ef; /* Thumb color and track color */
+}
+
+.card-section > :first-child {
+  margin-left: 0; /* Remove left margin for the first card */
+}
+
+.card-section > :last-child {
+  margin-right: 0; /* Remove right margin for the last card */
+}
+
+/* Each card should snap to the start of its position */
+.my_card {
+  width: 275px;
+  background: #eeeef1;
+  border-radius: 10px;
+  position: relative;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  padding: 0 12.5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  margin-left: 12.5px;
+  cursor: default;
+}
+
+.my_card h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.my_card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+
+.my_card p {
+  display: block;
+  opacity: 0;
+  /* Overlay covers the whole card */
+  position: absolute;
+  top: 0px;
+  bottom: 12.5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Intel blue background with transparency */
+  background: rgba(0, 58, 128, 0.822);
+  color: #fff; /* White text for contrast */
+  font-size: 1.05em;
+  border-radius: 10px;
+  border: 3px outset #ebebeb; /* Intel blue border */
+  /* Smooth transition for fade in */
+  transition: opacity 0.3s;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.my_card img {
+  width: 250px;
+  height: auto;
+}
+
+.my_card.tapped {
+  transition: transform 0.2s;
+}
+
+/* Show the overlay text when hovering over the card */
+.my_card.tapped p {
+  opacity: 1;
+}
+
+/* Fade the card content into the background when hovered */
+.my_card.tapped img,
+.my_card.tapped h2,
+.my_card.tapped h3 {
+  opacity: 0.25;
+  transition: opacity 0.3s;
+}
+
+
+.learn-more {
+  font-size: 1.4em;
+  color: #000000;
+  text-align: center;
+}
+
+h1, h2, h3, p {
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.fixed-max-width {
+  max-width: 900px;
+}
+
+.learn-more-button:hover {
+  background: #2F80ED;
+  color: rgb(254, 254, 254);
+}
+
+.learn-more-button {
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px solid #2F80ED;
+  background: white;
+  color: #2F80ED;
+  transition: 0.1s ease-in-out;
+}
+
+.col-sec-header {
+  margin-bottom: 0px;
+}
+
+#sign-up {
+  background: rgb(213, 221, 229);
+  border: 1px solid #2F80ED;
+  padding: 4px 10px;
+  border-radius: 5px;
+  background: white;
+  color: #2F80ED;
+  transition: 0.1s ease-in-out;
+}
+
+#sign-up:hover {
+  background: #2F80ED;
+  color: rgb(254, 254, 254);
+}
+
+.footer-area {
+  background-color: #e1e4e6;
+}
+
+.footer-area a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 950px) {
+  .card-sec-wrapper {
+    margin-bottom: 35px;
+  }
+
+  .hero-section img {
+    width: 100px; /* Smaller logo for mobile */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .hero-section h1 {
+    font-size: 1.5em;
+    max-width: 90%;
+  }
+
+  .hero-section p {
+    font-size: 1.1em;
+    max-width: 90%;
+  }
+
+  /* Stack cards vertically and show only one at a time */
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+    overflow-y: visible;
+    overflow-x: visible;
+    min-height: 350px; /* Keep container height for full background */
+    height: auto;
+    position: relative;
+    /* Enable vertical snap scrolling for cards on mobile */
+    scroll-snap-type: y mandatory; /* Snap to each card vertically */
+  }
+
+  .my_card {
+    width: 81%;
+    min-height: 342px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 18px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    /* Keep background and content fully visible */
+    background: #eeeef1;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 12.5px;
+    scroll-snap-align: start; /* Each card will snap to the top when scrolling */
+  }
+
+  .img-wrapper {
+    text-align: center;
+  }
+
+  .my_card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .my_card.tapped {
+    transition: transform 0.2s;
+  }
+
+  /* Show the overlay text when hovering over the card */
+  .my_card.tapped p {
+    opacity: 1;    
+  }
+
+  /* Fade the card content into the background when hovered */
+  .my_card.tapped img,
+  .my_card.tapped h2,
+  .my_card.tapped h3 {
+    opacity: 0.25;
+    transition: opacity 0.3s;
+  }
+
+  .learn-more {
+    visibility: hidden;
+  }
+
+}
+
+@media (max-width: 950px) {
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .my_card:hover p {
+    opacity: 1;
+  }
+
+  .my_card:hover img,
+  .my_card:hover h2,
+  .my_card:hover h3 {
+    opacity: 0.25;
+  }
+}
