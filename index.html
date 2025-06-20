@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" id="bootstrap_link">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Header / Hero Section -->
   <header>
-    <div>
+    <div class="hero-section">
       <img src="img/intel-header-logo.svg" alt="Intel Logo" />
       <!-- Main Heading -->
       <h1>
@@ -27,12 +30,15 @@
   </header>
 
   <!-- Timeline Cards Section -->
-  <section>
+  <div class="card-sec-wrapper">
+  <section class="card-section">
     <!-- Card 1: 1968 -->
-    <div>
+    <div class="my_card">
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <img src="img/1.jpg" alt="Placeholder Image" />
+      <div class="img-wrapper">
+        <img src="img/1.png" alt="Placeholder Image" />
+      </div>
       <p>
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
@@ -41,10 +47,12 @@
     </div>
 
     <!-- Card 2: 1971 -->
-    <div>
+    <div class="my_card">
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <img src="img/2.jpg" alt="Placeholder Image" />
+      <div class="img-wrapper">
+        <img src="img/2.png" alt="Placeholder Image" />
+      </div>
       <p>
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
@@ -53,10 +61,12 @@
     </div>
 
     <!-- Card 3: 1978 -->
-    <div>
+    <div class="my_card">
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <img src="img/3.jpg" alt="Placeholder Image" />
+      <div class="img-wrapper">
+        <img src="img/3.png" alt="Placeholder Image" />
+      </div>
       <p>
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
@@ -64,10 +74,12 @@
     </div>
 
     <!-- Card 4: 1985 -->
-    <div>
+    <div class="my_card">
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <img src="img/4.jpg" alt="Placeholder Image" />
+      <div class="img-wrapper">
+        <img src="img/4.png" alt="Placeholder Image" />
+      </div>
       <p>
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
@@ -76,10 +88,12 @@
     </div>
 
     <!-- Card 5: 2006 -->
-    <div>
+    <div class="my_card">
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <div class="img-wrapper">
+        <img src="img/5.png" alt="Placeholder Image" />
+      </div>
       <p>
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
@@ -89,10 +103,12 @@
     </div>
 
     <!-- Card 6: 2020 -->
-    <div>
+    <div class="my_card">
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <div class="img-wrapper">
+        <img src="img/6.png" alt="Placeholder Image" />
+      </div>
       <p>
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
@@ -101,22 +117,26 @@
     </div>
 
     <!-- Card 7: 2022 -->
-    <div>
+    <div class="my_card">
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <div class="img-wrapper">
+      <img src="img/7.png" alt="Placeholder Image" />
+      </div>
       <p>
-        Intel announces its commitment to achieve net-zero greenhouse 
-        gas emissions (Scope 1 and 2) across its global operations 
-        by 2040, building on years of environmental initiatives.
+      Intel announces its commitment to achieve net-zero greenhouse 
+      gas emissions (Scope 1 and 2) across its global operations 
+      by 2040, building on years of environmental initiatives.
       </p>
     </div>
 
     <!-- Card 8: 2023 -->
-    <div>
+    <div class="my_card">
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <div class="img-wrapper">
+        <img src="img/8.png" alt="Placeholder Image" />
+      </div>
       <p>
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
@@ -125,10 +145,12 @@
     </div>
 
     <!-- Card 9: 2024 -->
-    <div>
+    <div class="my_card">
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <div class="img-wrapper">
+        <img src="img/9.png" alt="Placeholder Image" />
+      </div>
       <p>
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
@@ -136,26 +158,43 @@
       </p>
     </div>
   </section>
-
+  </div>
   <!-- 3-Column Content Section -->
-  <section>
-    <div>
-      
+  <section class="container fixed-max-width">
+    <div class="row justify-content-center gy-5 mb-5">
       <!-- Column 1 -->
-      <div>
-        <h2>RISE Strategy</h2>
-        <p>
-          Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
-          Intel sets ambitious 2030 goals, including driving industry-wide 
-          progress on climate action, water stewardship, and waste reduction.
-        </p>
-        <!-- Learn More Button -->
-        <a href="#">Learn More</a>
-      </div>
-
+        <div class="col-9 col-sm-10 col-md-8 col-lg-4">
+          <div class="d-flex flex-row align-items-center mb-2 gap-1">
+          <svg width="50" height="50" viewBox="0 0 80 80" fill="#2F80ED">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0591 29.24C25.8634 28.5496 25.4537 27.0206 26.144 25.8249L32.6389 14.5755C34.1574 11.9454 36.9637 10.3252 40.0007 10.3252C43.0377 10.3252 45.844 11.9454 47.3625 14.5755L52.5009 23.4755L54.8155 22.1391C57.6483 20.5036 61.0443 23.1095 60.1977 26.2691L58.778 31.5674C57.9919 34.5015 54.976 36.2427 52.0419 35.4565L46.7436 34.0368C43.584 33.1902 43.0253 28.9462 45.8581 27.3107L48.1707 25.9755L43.0323 17.0755C42.407 15.9924 41.2513 15.3252 40.0007 15.3252C38.75 15.3252 37.5943 15.9924 36.969 17.0755L30.4742 28.3249C29.7838 29.5206 28.2548 29.9303 27.0591 29.24ZM52.6889 29.1404L51.1355 30.0373L53.336 30.6269C53.6028 30.6984 53.8769 30.5401 53.9484 30.2733L54.538 28.0728L52.9827 28.9708C52.936 29.0021 52.888 29.032 52.8386 29.0605C52.7893 29.089 52.7393 29.1156 52.6889 29.1404Z" fill="#2F80ED" fill-opacity="0.25"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M61.65 39.3238C60.9596 38.1281 59.4306 37.7184 58.2349 38.4088C57.0392 39.0991 56.6295 40.6281 57.3198 41.8238L63.8147 53.0732C64.44 54.1563 64.44 55.4907 63.8147 56.5739C63.1893 57.657 62.0337 58.3242 60.783 58.3242L50.5062 58.3242V55.6538C50.5062 52.3827 46.5514 50.7446 44.2385 53.0576L40.3598 56.9363C38.2119 59.0841 38.2119 62.5665 40.3598 64.7144L44.2385 68.5931C46.5514 70.9061 50.5062 69.2679 50.5062 65.9969V63.3242L60.783 63.3242C63.82 63.3242 66.6263 61.704 68.1448 59.0739C69.6633 56.4437 69.6633 53.2033 68.1448 50.5732L61.65 39.3238ZM45.5062 60.6546C45.5025 60.7107 45.5006 60.7672 45.5006 60.8242C45.5006 60.8812 45.5025 60.9378 45.5062 60.9938V62.7898L43.8953 61.1789C43.7001 60.9836 43.7001 60.667 43.8953 60.4718L45.5062 58.8609V60.6546Z" fill="#2F80ED" fill-opacity="0.25"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.7071 60.8214C34.7071 62.2022 33.5878 63.3214 32.2071 63.3214L19.2175 63.3214C16.1805 63.3214 13.3742 61.7012 11.8557 59.0711C10.3372 56.441 10.3372 53.2006 11.8557 50.5704L16.994 41.6705L14.6794 40.3341C11.8466 38.6986 12.4054 34.4546 15.5649 33.608L20.8633 32.1883C23.7974 31.4021 26.8132 33.1433 27.5994 36.0774L29.0191 41.3758C29.8657 44.5353 26.4696 47.1412 23.6368 45.5057L21.3242 44.1705L16.1858 53.0704C15.5605 54.1535 15.5605 55.488 16.1858 56.5711C16.8111 57.6542 17.9668 58.3214 19.2175 58.3214H32.2071C33.5878 58.3214 34.7071 59.4407 34.7071 60.8214ZM21.806 38.6752L23.3594 39.572L22.7698 37.3715C22.6983 37.1048 22.4241 36.9465 22.1574 37.0179L19.9569 37.6076L21.5122 38.5056C21.5626 38.5303 21.6126 38.557 21.6619 38.5855C21.7113 38.614 21.7593 38.6439 21.806 38.6752Z" fill="#2F80ED" fill-opacity="0.25"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0591 29.24C25.8634 28.5496 25.4537 27.0206 26.144 25.8249L32.6389 14.5755C34.1574 11.9454 36.9637 10.3252 40.0007 10.3252C43.0377 10.3252 45.844 11.9454 47.3625 14.5755L52.5009 23.4755L54.8155 22.1391C57.6483 20.5036 61.0443 23.1095 60.1977 26.2691L58.778 31.5674C57.9919 34.5015 54.976 36.2427 52.0419 35.4565L46.7436 34.0368C43.584 33.1902 43.0253 28.9462 45.8581 27.3107L48.1707 25.9755L43.0323 17.0755C42.407 15.9924 41.2513 15.3252 40.0007 15.3252C38.75 15.3252 37.5943 15.9924 36.969 17.0755L30.4742 28.3249C29.7838 29.5206 28.2548 29.9303 27.0591 29.24ZM52.6889 29.1404L51.1355 30.0373L53.336 30.6269C53.6028 30.6984 53.8769 30.5401 53.9484 30.2733L54.538 28.0728L52.9827 28.9708C52.936 29.0021 52.888 29.032 52.8386 29.0605C52.7893 29.089 52.7393 29.1156 52.6889 29.1404Z" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M61.65 39.3238C60.9596 38.1281 59.4306 37.7184 58.2349 38.4088C57.0392 39.0991 56.6295 40.6281 57.3198 41.8238L63.8147 53.0732C64.44 54.1563 64.44 55.4907 63.8147 56.5739C63.1893 57.657 62.0337 58.3242 60.783 58.3242L50.5062 58.3242V55.6538C50.5062 52.3827 46.5514 50.7446 44.2385 53.0576L40.3598 56.9363C38.2119 59.0841 38.2119 62.5665 40.3598 64.7144L44.2385 68.5931C46.5514 70.9061 50.5062 69.2679 50.5062 65.9969V63.3242L60.783 63.3242C63.82 63.3242 66.6263 61.704 68.1448 59.0739C69.6633 56.4437 69.6633 53.2033 68.1448 50.5732L61.65 39.3238ZM45.5062 60.6546C45.5025 60.7107 45.5006 60.7672 45.5006 60.8242C45.5006 60.8812 45.5025 60.9378 45.5062 60.9938V62.7898L43.8953 61.1789C43.7001 60.9836 43.7001 60.667 43.8953 60.4718L45.5062 58.8609V60.6546Z" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.7071 60.8214C34.7071 62.2022 33.5878 63.3214 32.2071 63.3214L19.2175 63.3214C16.1805 63.3214 13.3742 61.7012 11.8557 59.0711C10.3372 56.441 10.3372 53.2006 11.8557 50.5704L16.994 41.6705L14.6794 40.3341C11.8466 38.6986 12.4054 34.4546 15.5649 33.608L20.8633 32.1883C23.7974 31.4021 26.8132 33.1433 27.5994 36.0774L29.0191 41.3758C29.8657 44.5353 26.4696 47.1412 23.6368 45.5057L21.3242 44.1705L16.1858 53.0704C15.5605 54.1535 15.5605 55.488 16.1858 56.5711C16.8111 57.6542 17.9668 58.3214 19.2175 58.3214H32.2071C33.5878 58.3214 34.7071 59.4407 34.7071 60.8214ZM21.806 38.6752L23.3594 39.572L22.7698 37.3715C22.6983 37.1048 22.4241 36.9465 22.1574 37.0179L19.9569 37.6076L21.5122 38.5056C21.5626 38.5303 21.6126 38.557 21.6619 38.5855C21.7113 38.614 21.7593 38.6439 21.806 38.6752Z" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h2 class="col-sec-header">RISE Strategy</h2>
+          </div>
+          <p>
+            Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
+            Intel sets ambitious 2030 goals, including driving industry-wide 
+            progress on climate action, water stewardship, and waste reduction.
+          </p>
+          <!-- Learn More Button -->
+          <a href="#" class="learn-more-button">Learn More</a>
+        </div>
+        
       <!-- Column 2 -->
-      <div>
-        <h2>Commitment</h2>
+      <div class="col-9 col-sm-10 col-md-8 col-lg-4">
+        <div class="d-flex flex-row align-items-center mb-2 gap-1">
+        <svg width="50" height="50" viewBox="0 0 80 80" fill="none">
+        <path d="M29.9867 14.3934C36.778 11.5804 44.4086 11.5804 51.1999 14.3934C57.9912 17.2064 63.3868 22.6021 66.1999 29.3934C69.0129 36.1847 69.0129 43.8153 66.1999 50.6066C63.3868 57.3979 57.9912 62.7936 51.1999 65.6066C44.4086 68.4196 36.778 68.4196 29.9867 65.6066C23.1954 62.7936 17.7997 57.3979 14.9867 50.6066C12.1736 43.8153 12.1736 36.1847 14.9867 29.3934C17.7997 22.6021 23.1954 17.2064 29.9867 14.3934Z" fill="#2F80ED"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6509 56.1306C25.3729 45.8025 25.3729 34.198 29.6509 23.8699C31.3675 19.7256 33.7165 15.9231 36.5813 12.5789C39.2405 12.19 41.9429 12.1898 44.6022 12.5785C47.4682 15.9234 49.8181 19.727 51.5353 23.8726C55.8133 34.2007 55.8133 45.8052 51.5352 56.1333C49.8179 60.2794 47.4676 64.0834 44.6011 67.4287C41.9443 67.8168 39.2445 67.8169 36.5876 67.429C33.72 64.083 31.3688 60.2779 29.6509 56.1306ZM32.4226 25.0179C34.3506 20.3632 37.1375 16.1727 40.5918 12.6378C44.0472 16.1732 46.8351 20.3647 48.7636 25.0206C52.7372 34.6136 52.7372 45.3922 48.7636 54.9853C46.8356 59.6399 44.0487 63.8305 40.5944 67.3654C37.1389 63.8299 34.3511 59.6384 32.4226 54.9826C28.449 45.3895 28.449 34.6109 32.4226 25.0179Z" fill="#F2F2F2"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2112 31.5C14.4399 30.7902 14.698 30.0874 14.9855 29.3934C15.11 29.0928 15.2396 28.795 15.3741 28.5L65.8102 28.5C65.9447 28.795 66.0742 29.0928 66.1987 29.3934C66.4862 30.0874 66.7443 30.7902 66.973 31.5L14.2112 31.5ZM14.9416 50.5C14.5387 49.5157 14.1947 48.514 13.9097 47.5L67.2746 47.5C66.9895 48.514 66.6456 49.5157 66.2426 50.5L14.9416 50.5Z" fill="#F2F2F2"/>
+        </svg>
+        <h2 class="col-sec-header">Commitment
+        </h2>
+        </div>
         <p>
           In 2022, Intel pledged to achieve net-zero greenhouse gas emissions 
           (Scope 1 and 2) by 2040. This commitment builds on decades of 
@@ -163,12 +202,19 @@
           industry.
         </p>
         <!-- Learn More Button -->
-        <a href="#">Learn More</a>
+        <a href="#" class="learn-more-button">Learn More</a>
       </div>
 
       <!-- Column 3 -->
-      <div>
-        <h2>Water &amp; Waste</h2>
+      <div class="col-9 col-sm-10 col-md-8 col-lg-4">
+        <div class="d-flex flex-row align-items-center mb-2">
+        <svg width="50" height="50" viewBox="0 0 80 80" fill="none">
+        <path d="M38.1776 16.0307C38.8866 14.4627 41.1134 14.4627 41.8224 16.0307L44.8729 22.7778C46.3364 26.0148 48.0331 29.1412 49.9494 32.1323L55.3675 40.5891C58.2711 45.1213 58.7829 50.7845 56.7389 55.7639C55.0762 59.814 51.8728 63.0378 47.8332 64.7261L47.1029 65.0314C42.5581 66.9309 37.4419 66.9309 32.8971 65.0314L32.1668 64.7261C28.1272 63.0378 24.9238 59.814 23.2611 55.7639C21.2171 50.7845 21.7289 45.1213 24.6325 40.5891L30.0506 32.1323C31.9669 29.1412 33.6636 26.0148 35.1271 22.7778L38.1776 16.0307Z" fill="#2F80ED" stroke="#2F80ED" stroke-width="4" stroke-linecap="square" stroke-linejoin="round"/>
+        <path d="M34.7548 60.2441L33.9894 62.0919L34.7548 60.2441ZM28.7559 54.2452L30.6036 53.4798L30.6036 53.4798L28.7559 54.2452ZM43.0411 62.4472C44.0915 62.1057 44.6663 60.9773 44.3249 59.9269C43.9834 58.8764 42.855 58.3016 41.8046 58.6431L43.0411 62.4472ZM29.9121 50.0031C29.9121 48.8985 29.0167 48.0031 27.9122 48.0031C26.8076 48.003 25.9121 48.8984 25.9121 50.003L29.9121 50.0031ZM35.5202 58.3964C33.2942 57.4743 31.5257 55.7058 30.6036 53.4798L26.9081 55.0106C28.2361 58.2167 30.7833 60.7639 33.9894 62.0919L35.5202 58.3964ZM41.8046 58.6431C39.7548 59.3094 37.5258 59.2271 35.5202 58.3964L33.9894 62.0919C36.8782 63.2885 40.0886 63.4069 43.0411 62.4472L41.8046 58.6431ZM25.9121 50.003C25.9121 51.7051 26.2441 53.4075 26.9081 55.0106L30.6036 53.4798C30.1426 52.3668 29.9121 51.185 29.9121 50.0031L25.9121 50.003Z" fill="#F2F2F2"/>
+        </svg>
+        <h2 class="col-sec-header">Water &amp; Waste
+        </h2>
+        </div>
         <p>
           Intel conserves billions of gallons of water annually and 
           collaborates with local communities to restore watersheds.
@@ -176,16 +222,61 @@
           advance a circular economy.
         </p>
         <!-- Learn More Button -->
-        <a href="#">Learn More</a>
+        <a href="#" class="learn-more-button">Learn More</a>
       </div>
-
     </div>
   </section>
 
   <!-- Subscription Form -->
-  <section>
-    <h2>Subscribe to our Newsletter</h2>
+  <section class="container text-center mb-5">
+    <h2 class="mb-3">Subscribe to our Newsletter</h2>
     <!-- Add form here -->
+    <form class="d-flex flex-row justify-content-center align-items-center gap-2">
+      <label for="email" id="email" class="visually-hidden">Enter email</label>
+      <input type="text" id="sign-up-box" name="email" placeholder="Enter email">
+      <button type="button" class="btn" id="sign-up" data-bs-toggle="modal" data-bs-target="#signUpModal" onclick="clearText()">Sign up</button>
+    </form>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign-Up Successful</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>The email you provided has been successfully subscribed to our newsletter.</p>
+          <p>Thank you!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer-area container-fluid text-center pt-4 pb-2">
+    <div class="row justify-content-center">
+      <div class="col col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+        <p>&copy 2025 Intel</p>
+      </div>
+      <div class="col col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="col col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+        <a href="#">Terms of Use</a>
+      </div>
+      <div class="col col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
