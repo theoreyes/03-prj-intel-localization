@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: false });
   }
 
-  // Checks on start up if an rtl language is being used
+  // Checks on start up if an rtl language is being used, switches layout if needed
   const rtlLanguages = ['ar', 'fa', 'he', 'ur', 'ps', 'sd', 'ug', 'dv', 'ku', 'yi'];
   if (document.documentElement.getAttribute('dir') !== 'rtl') {
     if (rtlLanguages.includes(document.querySelector('html').lang))
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       switchToLTR();
   }
 
-  // Handles dynamic RTL
+  // Handles dynamic RTL using a MutationObserer
   const obs = new MutationObserver((mutationsList) => {
     for (const mutation of mutationsList) {
       if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
@@ -72,13 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Handles implicit submission using "Enter" for the sign-up box
-    document.getElementById("sub-form").addEventListener('submit', function(event) {
-      event.preventDefault(); // prevents page reload
-      clearText();
-      const modalElement = new bootstrap.Modal(document.getElementById('signUpModal'));
-      modalElement.show();
-    });
-  
+  document.getElementById("sub-form").addEventListener('submit', function(event) {
+    event.preventDefault(); // prevents page reload
+    clearText();
+    const modalElement = new bootstrap.Modal(document.getElementById('signUpModal'));
+    modalElement.show();
+  });
+
 });
 
 function switchToRTL() {
