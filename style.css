@@ -188,7 +188,7 @@ h1, h2, h3, p {
 }
 
 .learn-more-button:hover {
-  background: #2F80ED;
+  background: #0E53AA;
   color: rgb(254, 254, 254);
 }
 
@@ -196,9 +196,9 @@ h1, h2, h3, p {
   text-decoration: none;
   padding: 4px 10px;
   border-radius: 5px;
-  border: 1px solid #2F80ED;
+  border: 1px solid #0E53AA;
   background: white;
-  color: #2F80ED;
+  color: #0E53AA;
   transition: 0.1s ease-in-out;
 }
 
@@ -208,16 +208,16 @@ h1, h2, h3, p {
 
 #sign-up {
   background: rgb(213, 221, 229);
-  border: 1px solid #2F80ED;
+  border: 1px solid #0E53AA;
   padding: 4px 10px;
   border-radius: 5px;
   background: white;
-  color: #2F80ED;
+  color: #0E53AA;
   transition: 0.1s ease-in-out;
 }
 
 #sign-up:hover {
-  background: #2F80ED;
+  background: #0E53AA;
   color: rgb(254, 254, 254);
 }
 
