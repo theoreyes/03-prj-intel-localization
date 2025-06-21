@@ -70,6 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
     attributes: true,
     attributeFilter: ['lang']
   });
+
+  // Handles implicit submission using "Enter" for the sign-up box
+    document.getElementById("sub-form").addEventListener('submit', function(event) {
+      event.preventDefault(); // prevents page reload
+      clearText();
+      const modalElement = new bootstrap.Modal(document.getElementById('signUpModal'));
+      modalElement.show();
+    });
   
 });
 
